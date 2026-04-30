@@ -6,6 +6,5 @@ services:
     environment:
       - USER=rstudio
       - PASSWORD=password
-    # AntigravityのManager Viewからポート8787でRStudioを並行利用することも可能
     ports:
       - "8787:8787"

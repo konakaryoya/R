@@ -1,0 +1,12 @@
+{
+  "name": "R-DuckDB-Antigravity-Env",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "r-dev-env",
+  "workspaceFolder": "/home/rstudio/project",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {}
+  },
+  "forwardPorts": [8787],
+  // 起動時にRのLanguage ServerとDuckDBパッケージを自動インストール
+  "postCreateCommand": "R -e 'install.packages(c(\"languageserver\", \"duckdb\", \"DBI\"))'"
+}

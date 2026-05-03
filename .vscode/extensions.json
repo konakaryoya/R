@@ -2,6 +2,7 @@
   "recommendations": [
     "REditorSupport.r",
     "REditorSupport.r-syntax",
-    "dbcode.dbcode"
+    "dbcode.dbcode",
+    "yzhang.markdown-all-in-one"
   ]
 }

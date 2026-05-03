@@ -1,5 +1,7 @@
 services:
   r-dev-env:
+    container_name: r-dev-container
+    image: r-dev-image
     build:
       context: .
       dockerfile: Dockerfile

@@ -6,5 +6,6 @@
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {}
   },
-  "forwardPorts": [8787]
+  "forwardPorts": [8787],
+  "postCreateCommand": "sh .devcontainer/install-extensions.sh"
 }

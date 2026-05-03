@@ -6,7 +6,7 @@
 
 1. devcontainerの「Reopen in Container」をクリックする
 2. 処理の完了を待つ
-3. `.vscode/extensions.json`にある拡張機能をインストールする
+3. Google Antigravityを使用する場合、postCreateCommandがうまく動かないため、`sh .devcontainer/install-extensions.sh agy`で拡張機能をインストールする
 4. ブラウザで`localhost:8787`にアクセスする
 5. `docker-compose.yml`で指定したユーザー、パスワードでRStudioにログインする
 6. RStudio上で./project/project.Rprojを開く

@@ -6,10 +6,11 @@
 
 1. devcontainerの「Reopen in Container」をクリックする
 2. 処理の完了を待つ
-3. Google Antigravityを使用する場合、postCreateCommandがうまく動かないため、`sh .devcontainer/install-extensions.sh agy`で拡張機能をインストールする
-4. ブラウザで`localhost:8787`にアクセスする
-5. `docker-compose.yml`で指定したユーザー、パスワードでRStudioにログインする
-6. RStudio上で./project/project.Rprojを開く
+3. （Google Antigravityを使用する場合）docker compose upで止まったら、コマンドパレットで「Developer: Reload Window」を実行する
+4. （Google Antigravityを使用する場合）postCreateCommandがうまく動かないため、コンテナ内のターミナルで`sh .devcontainer/install-extensions.sh agy`を実行する
+5. ブラウザで`localhost:8787`にアクセスする
+6. `docker-compose.yml`で指定したユーザー、パスワードでRStudioにログインする
+7. RStudio上で./project/project.Rprojを開く
 
 ### .devcontainerディレクトリ配下の設定を修正後にやること
 

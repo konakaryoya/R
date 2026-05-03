@@ -4,7 +4,7 @@
   "service": "r-dev-env",
   "workspaceFolder": "/home/rstudio/project",
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:1": {}
+    "ghcr.io/devcontainers/features/common-utils:2": {}
   },
   "forwardPorts": [8787]
 }

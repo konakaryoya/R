@@ -13,16 +13,13 @@
 
 ### .devcontainerディレクトリ配下の設定を修正後にやること
 
-```shell
-# コンテナID確認
-docker ps -a
-# コンテナ削除
-docker rm -f <コンテナID>
-# 関連するイメージ確認
-docker images
-# 関連するイメージ削除
-docker rmi <イメージID>
-```
+- ホストOSで`sh reset-docker.sh`を実行してから、Dev Containerを再構築する
+- VS Codeではコマンドパレットに「Dev Containers: Rebuild Container」があるが、Antigravityではまだないためスクリプトを作成した
+
+### 名前なしの古いイメージを削除したいときに実行するコマンド
+
+- ホストOSで`docker image prune -f`を実行する
+- リビルドを繰り返すことで名前なしの古いイメージが溜まってくるので、必要に応じて実行する
 
 ## フォルダ構成
 

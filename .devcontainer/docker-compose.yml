@@ -1,6 +1,8 @@
 services:
   r-dev-env:
-    image: rocker/tidyverse:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ..:/home/rstudio/project:cached
     environment:

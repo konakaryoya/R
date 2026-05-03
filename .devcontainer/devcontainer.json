@@ -6,7 +6,5 @@
   "features": {
     "ghcr.io/devcontainers/features/common-utils:1": {}
   },
-  "forwardPorts": [8787],
-  // 起動時にRのLanguage ServerとDuckDBパッケージを自動インストール
-  "postCreateCommand": "R -e 'install.packages(c(\"languageserver\", \"duckdb\", \"DBI\"))'"
+  "forwardPorts": [8787]
 }

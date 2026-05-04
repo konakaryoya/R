@@ -1,5 +1,5 @@
 {
-  "name": "R-DuckDB-Antigravity-Env",
+  "name": "R-devtool-Env",
   "dockerComposeFile": "docker-compose.yml",
   "service": "r-dev-env",
   "workspaceFolder": "/home/rstudio/project",
@@ -7,5 +7,17 @@
     "ghcr.io/devcontainers/features/common-utils:2": {}
   },
   "forwardPorts": [8787],
-  "postCreateCommand": "sh .devcontainer/install-extensions.sh"
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "r.bracketedPaste": true
+      },
+      "extensions": [
+        "REditorSupport.r",
+        "REditorSupport.r-syntax",
+        "dbcode.dbcode",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  }
 }

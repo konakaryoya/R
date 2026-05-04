@@ -9,6 +9,13 @@ RUN install2.r --error --skipinstalled \
     psych \
     e1071
 
+# 追加で必要なものインストール
+RUN apt-get update && apt-get install -y \
+    # 日本語フォント対応（グラフ描画等で使用する）
+    fonts-noto-cjk \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 # ==========================================
 # 開発用設定
 # ==========================================

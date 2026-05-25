@@ -11,6 +11,8 @@ RUN install2.r --error --skipinstalled \
     psych \
     # SVM（サポートベクターマシン）
     e1071
+    # 多重共線性の確認（VIF）
+    car
 
 # 追加で必要なものインストール
 RUN apt-get update && apt-get install -y \

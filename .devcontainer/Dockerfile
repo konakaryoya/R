@@ -5,8 +5,11 @@ FROM rocker/tidyverse:latest
 
 # 必要なRパッケージのインストール
 RUN install2.r --error --skipinstalled \
+    # R言語サーバー
     languageserver \
+    # 統計解析
     psych \
+    # SVM（サポートベクターマシン）
     e1071
 
 # 追加で必要なものインストール

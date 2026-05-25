@@ -10,7 +10,7 @@ RUN install2.r --error --skipinstalled \
     # 統計解析
     psych \
     # SVM（サポートベクターマシン）
-    e1071
+    e1071 \
     # 多重共線性の確認（VIF）
     car
 

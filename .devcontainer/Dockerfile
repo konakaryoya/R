@@ -12,7 +12,11 @@ RUN install2.r --error --skipinstalled \
     # SVM（サポートベクターマシン）
     e1071 \
     # 多重共線性の確認（VIF）
-    car
+    car \
+    # Lasso回帰、Ridge回帰
+    glmnet \
+    # 重回帰分析のためのグラフ作成
+    plotmo
 
 # 追加で必要なものインストール
 RUN apt-get update && apt-get install -y \

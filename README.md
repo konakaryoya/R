@@ -2,6 +2,12 @@
 
 ## 環境構築
 
+### 動作環境
+
+- Visual Studio Code
+- Docker
+- Dev Containers拡張機能(id: `ms-vscode-remote.remote-containers`)
+
 ### 起動方法
 
 1. devcontainerの「Reopen in Container」をクリックする

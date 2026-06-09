@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        GEMINI_CLI: "true"
+        GEMINI_CLI: "false"
     volumes:
       - ..:/home/rstudio/project:cached
     environment:

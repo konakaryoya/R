@@ -26,7 +26,23 @@ RUN install2.r --error --skipinstalled \
     # Lasso回帰、Ridge回帰
     glmnet \
     # 重回帰分析のためのグラフ作成
-    plotmo
+    plotmo \
+    # originsのデータセット等
+    faraway \
+    # 決定木の可視化
+    rpart.plot \
+    # 決定木の可視化（葉ノードのグラフ表示）
+    partykit \
+    # ランダムフォレスト
+    randomForest \
+    # 3次元のクラスタリングプロット
+    plotly \
+    # 分類問題及び回帰問題に対応した統合パッケージ
+    caret \
+    # caretより多機能なパッケージ
+    tidymodels \
+    # 綺麗な集計表を作成するパッケージ
+    gtsummary
 
 # 追加で必要なものインストール
 RUN apt-get update && apt-get install -y \

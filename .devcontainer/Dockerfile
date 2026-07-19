@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y locales \
 RUN install2.r --error --skipinstalled \
     # R言語サーバー
     languageserver \
-    # 統計解析
+    # 綺麗で無駄のない散布図行列が描ける
     psych \
     # SVM（サポートベクターマシン）
     e1071 \

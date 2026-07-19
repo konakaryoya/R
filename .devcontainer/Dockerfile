@@ -3,6 +3,16 @@
 # ==========================================
 FROM rocker/tidyverse:latest
 
+# --- 日本語ロケールの生成と環境変数の設定 ---
+ENV LANG=ja_JP.UTF-8
+ENV LC_ALL=ja_JP.UTF-8
+RUN apt-get update && apt-get install -y locales \
+    && locale-gen ja_JP.UTF-8 \
+    && update-locale LANG=ja_JP.UTF-8 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+# --------------------------------------------------
+
 # 必要なRパッケージのインストール
 RUN install2.r --error --skipinstalled \
     # R言語サーバー
